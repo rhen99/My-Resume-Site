@@ -49,6 +49,9 @@ a {
 .email span {
   font-weight: 700;
 }
+.intro-links {
+  padding: 0.5rem 0;
+}
 .about {
 }
 .about section {
@@ -75,14 +78,17 @@ a {
   width: 100px;
 }
 .portfolio {
+  padding: 3rem 0;
 }
 .tile {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 .portfolio-card {
+  width: 250px;
   height: 250px;
   display: flex;
   background-color: #fff;
+  margin: auto;
 }
 .portfolio-card-content {
   margin: auto;
@@ -98,4 +104,30 @@ a {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+  .email {
+    font-size: 1rem;
+  }
+  .languages-showcase {
+    display: flex;
+  }
+  .logo {
+    flex: 1;
+  }
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-card {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
